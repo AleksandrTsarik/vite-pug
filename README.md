@@ -4,6 +4,7 @@ src/
 │ └── about.pug
 ├── components/
 │ ├── \_header.pug
+│ ├── \_head.pug
 │ ├── \_footer.pug
 │ └── \_mixin.pug
 │ └── \_scripts.pug
