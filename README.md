@@ -13,3 +13,9 @@ src/
 └── assets/
 ├── scss/main.scss
 └── js/main.js
+
+# Node < 21.7
+
+# npm i
+
+# npm run dev
