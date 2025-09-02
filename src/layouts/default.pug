@@ -1,0 +1,16 @@
+doctype html
+html(lang="ru")
+  block set-title
+    title Страница....
+  include ../components/main/_head.pug
+
+  body
+    include ../components/main/_mixin.pug
+
+    include ../components/main/_header.pug
+    main.content
+      block content
+    include ../components/main/_footer.pug
+
+
+    include ../components/main/_scripts.pug

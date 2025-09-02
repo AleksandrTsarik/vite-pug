@@ -1,0 +1,10 @@
+extends ../layouts/default.pug
+
+block set-title
+  - var title = 'Главная'
+
+
+block content
+  h1 Добро пожаловать!
+  p Это главная страница.
+  +button('Подробнее', '/about.html', 'primary')

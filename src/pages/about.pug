@@ -1,0 +1,9 @@
+extends ../layouts/default.pug
+
+block set-title
+  - var title = 'О нас'
+
+block content
+  h1 About!
+  +button('Подробнее', '/about.html', 'primary')
+  +button('Назад', '/', 'secondary')

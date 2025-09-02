@@ -1,0 +1,44 @@
+@use "variables";
+@use "mixins";
+
+body {
+  margin: 0;
+  background: #f8f9fa;
+}
+
+.header {
+  background: #333;
+  padding: 1rem;
+  a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+  }
+}
+
+.footer {
+  background: #000000;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 10px 0;
+  border-radius: 4px;
+  text-decoration: none;
+  background: #6c757d;
+  &.primary {
+    color: white;
+  }
+  &.secondary {
+    color: white;
+  }
+}
+
+.content {
+  min-height: calc(100vh - 140px);
+  padding: 20px;
+}
