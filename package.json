@@ -1,19 +1,18 @@
 {
-  "name": "pug-vite-starter",
-  "private": true,
-  "version": "1.0.0",
   "scripts": {
-    "build": "pug src/pages -o dist && shx mkdir -p dist/assets/css && sass src/assets/scss/main.scss dist/assets/css/main.css && shx mkdir -p dist/assets/js && shx cp src/assets/js/*.js dist/assets/js/",
+    "build:fonts": "node scripts/convertFonts.js",
+    "build": "npm run build:fonts && pug src/pages -o dist && shx mkdir -p dist/assets/css && sass src/assets/scss/main.scss dist/assets/css/main.css && shx mkdir -p dist/assets/js && shx cp src/assets/js/*.js dist/assets/js/",
     "dev:pug": "pug src/pages -o dist --watch",
     "dev:sass": "sass src/assets/scss/main.scss dist/assets/css/main.css --watch",
     "dev": "npm run build && concurrently \"npm run dev:pug\" \"npm run dev:sass\" \"npx vite\""
   },
   "devDependencies": {
+    "concurrently": "^9.2.1",
+    "fontmin": "^0.9.9",
     "pug": "^3.0.3",
     "pug-cli": "^1.0.0-alpha6",
     "sass": "^1.91.0",
     "shx": "^0.4.0",
-    "concurrently": "^9.2.1",
     "vite": "^4.5.5"
   }
 }
